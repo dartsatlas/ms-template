@@ -2,7 +2,7 @@
 html {
   min-height: 100%;
   padding: 0;
-  @include linear-gradient(135deg, $primaryColor, darken($primaryColor, 14%));
+  @include linear-gradient(135deg, darken($primaryColor, 50%), darken($primaryColor, 90%));
 }
 body {
   padding: 0;
