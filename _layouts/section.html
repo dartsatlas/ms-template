@@ -2,11 +2,9 @@
 <html lang="{{ site.lang | default: "en-US" }}">
   {% include head.html %}
   <body>
-    {% include random_background.html %}
     {% include navigation.html %}
     <main id="main_content">
       <div>
-        {% include print.html %}
         {% assign this_collection = site.collections | where:"label", page.collection | first %}
 
         {% assign items = this_collection.docs | sort: "order" %}
@@ -25,6 +23,5 @@
         {% endfor %}
       </div>
     </main>
-    {% include analytics.html %}
   </body>
 </html>
