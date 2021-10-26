@@ -4,6 +4,9 @@
 @import url("https://use.typekit.net/xtb6utt.css");
 @import url('https://fonts.googleapis.com/css?family=PT+Sans&display=swap');
 
+$primaryColor: {{ site.primary_color }};
+$accentColor: {{ site.accent_color }};
+
 @import "reset";
 @import "variables";
 // @import "typography";
