@@ -1,15 +1,45 @@
 <!DOCTYPE html>
 <html lang="{{ site.lang | default: "en-US" }}">
-  {% include head.html %}
-  <body>
-    {% include navigation.html %}
-    <main id="main_content">
-      <div>
-        {%- if site.banner_image -%}
-          <img src="{{ site.url }}/assets/images/{{ site.banner_image }}" class="homepage-banner-image" aria-hidden=true />
-        {%- endif -%}
-        {{ page.content | markdownify }}
-      </div>
-    </main>
-  </body>
+{% include head.html %}
+<body>
+  {% include header.html %}
+  {% include navigation.html %}
+  <main>
+    <h1>News</h1>
+    <p>15-Oct, 2022</p>
+    {{ site.posts.first.excerpt }}
+  
+    <h2>Territories</h2>
+    <ul class="territories-list">
+      <li>
+        <a href="">
+          <span>BeNeLux</span>
+          <span>Kim Viljanen</span>
+        </a>
+      </li>
+      <li>
+        <a href="">
+          <span>Canada</span>
+          <span>Jim Long</span>
+        </a>
+      </li>
+      <li>
+        <a href="">
+          <span>Denmark</span>
+          <span>Title Holder</span>
+        </a>
+      </li>
+      <li>
+        <a href="">
+          <span>Germany</span>
+          <span>Title Holder</span>
+        </a>
+      </li>
+      <li><a href="">Ireland</a></li>
+      <li><a href="">Oceania</a></li>
+      <li><a href="">United Kingdom</a></li>
+      <li><a href="">United States</a></li>
+    </ul>
+  </main>
+</body>
 </html>
