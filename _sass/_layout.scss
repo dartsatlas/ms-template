@@ -56,15 +56,17 @@ nav {
       margin: 0 .5em;
       a {
         font-size: .9em;
-        padding: .5em 1em;
-        background-color: rgba(black, .1);
+        padding: .3em .6em;
+        background-color: rgba($primaryColor, .2);
         display: block;
         text-decoration: none;
         font-weight: 400;
+/*
         border-width: 1px;
         border-radius: .5em;
         border-style: dotted;
         border-color: $accentColor;
+*/
         transition: background-color .3s;
         &:hover {
           background-color: rgba(white, .05);
