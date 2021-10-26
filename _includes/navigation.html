@@ -6,3 +6,10 @@
     <li><a href="">Membership</a></li>
   </ul>
 </nav>
+<nav>
+  <ul>
+    {% for page in site.pages %}
+      <li>{{ page.title }}</li>
+    {% endfor %}
+  </ul>
+</nav>
