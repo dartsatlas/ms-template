@@ -44,27 +44,38 @@ header {
 //   @include linear-gradient(170deg, $primaryColor, darken($primaryColor, 14%));
   border-bottom: 2px solid $accentColor;
 }
-nav ul {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  li {
-    margin: 0 .5em;
-    a {
-      font-size: .9em;
-      padding: .5em 1em;
-      background-color: rgba(black, .1);
-      display: block;
-      text-decoration: none;
-      font-weight: 400;
-      border-width: 0 0px 1px 0px;
-      border-style: dotted;
-      border-color: $accentColor;
-      transition: background-color .3s;
-      &:hover {
-        background-color: rgba(white, .05);
+nav {
+  margin-top: .5em;
+
+  ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    li {
+      margin: 0 .5em;
+      a {
+        font-size: .9em;
+        padding: .5em 1em;
+        background-color: rgba(black, .1);
+        display: block;
+        text-decoration: none;
+        font-weight: 400;
+        border-width: 1px;
+        border-radius: .5em;
+        border-style: dotted;
+        border-color: $accentColor;
         transition: background-color .3s;
+        &:hover {
+          background-color: rgba(white, .05);
+          transition: background-color .3s;
+        }
+      }
+      &.current {
+        a {
+          border-style: solid;
+          background-color: rgba(white, .1);
+        }
       }
     }
   }
